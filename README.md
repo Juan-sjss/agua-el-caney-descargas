@@ -10,6 +10,17 @@ aplicaciones Android del proyecto Agua el Caney. No contiene código fuente.
 
 Página con códigos QR: <https://juan-sjss.github.io/agua-el-caney-descargas/>
 
+## Verificación
+
+| Archivo | Tamaño | SHA-256 |
+|---|---|---|
+| `AguaElCaney-Cliente-2026-11-15.apk` | 81 155 771 bytes | `78763F3E350126998503083AC8BF72C25D694205F06F10B02C8D56A419DD69E0` |
+| `AguaElCaney-Repartidor-2026-11-15.apk` | 81 131 963 bytes | `1ED68738B773FC6EAC88F42743BA6E3EE42A270AA2CAA455F1AABCE40F8755A0` |
+
+Ambas descargas responden `200` con `Content-Disposition: attachment;
+filename=AguaElCaney-...apk`. Las dos APK se compilaron con Hermes (JavaScript
+como bytecode) y R8 en release.
+
 ## Cómo instalar
 
 1. Abrir el enlace desde un teléfono Android (o escanear el QR).
