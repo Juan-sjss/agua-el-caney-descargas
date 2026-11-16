@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agua el Caney — Descarga de la app</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 16px 64px;
+    font-family: Inter, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f4f8fc; color: #14283c;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 32px; }
+  h1 { font-size: 26px; margin: 0 0 8px; letter-spacing: -0.3px; }
+  header p { margin: 0; color: #4a657f; font-size: 15px; }
+  .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .card {
+    background: #fff; border-radius: 18px; padding: 24px;
+    box-shadow: 0 8px 28px rgba(20, 40, 60, .10);
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+  }
+  .tag { font-size: 12px; font-weight: 700; letter-spacing: .8px; text-transform: uppercase;
+         padding: 5px 12px; border-radius: 999px; }
+  .cliente .tag { background: #e3f0ff; color: #1b5fa8; }
+  .repartidor .tag { background: #ffe6e6; color: #b3261e; }
+  h2 { font-size: 20px; margin: 14px 0 4px; }
+  .meta { font-size: 13px; color: #5d768d; margin: 0 0 18px; }
+  img.qr { width: 190px; height: 190px; display: block; border-radius: 8px; background: #fff; }
+  .btn {
+    margin-top: 8px; display: inline-block; width: 100%; padding: 14px 18px;
+    border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 15px;
+    background: #0b63c5; color: #fff;
+  }
+  .repartidor .btn { background: #b3261e; }
+  .btn:hover { filter: brightness(1.08); }
+  .small { font-size: 12px; color: #7a8fa3; margin-top: 10px; word-break: break-all; }
+  .steps { background: #fff; border-radius: 18px; padding: 22px 26px; margin-top: 24px;
+           box-shadow: 0 8px 28px rgba(20, 40, 60, .08); }
+  .steps h3 { margin: 0 0 12px; font-size: 17px; }
+  .steps ol { margin: 0; padding-left: 20px; color: #3c5570; font-size: 14px; line-height: 1.7; }
+  .steps li { margin-bottom: 6px; }
+  footer { text-align: center; margin-top: 28px; font-size: 12px; color: #8098ad; }
+  code { background: #eef4fa; padding: 1px 6px; border-radius: 5px; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Agua el Caney</h1>
+    <p>Descarga la aplicación de escritorio de pedidos, sin pasar por Google Play.</p>
+  </header>
+
+  <div class="grid">
+    <section class="card cliente">
+      <span class="tag">Cliente</span>
+      <h2>Agua el Caney</h2>
+      <p class="meta">Android 7.0 o superior · APK</p>
+      <img class="qr" src="qr-cliente.png" alt="Código QR para descargar la app del cliente" width="190" height="190">
+      <a class="btn" href="https://github.com/Juan-sjss/agua-el-caney-descargas/releases/download/v1.0.0/AguaElCaney-Cliente-2026-11-15.apk">Descargar APK del cliente</a>
+      <p class="small">Escanéalo con la cámara o toca el botón.</p>
+    </section>
+
+    <section class="card repartidor">
+      <span class="tag">Repartidor</span>
+      <h2>Agua el Caney Repartidor</h2>
+      <p class="meta">Android 7.0 o superior · APK</p>
+      <img class="qr" src="qr-repartidor.png" alt="Código QR para descargar la app del repartidor" width="190" height="190">
+      <a class="btn" href="https://github.com/Juan-sjss/agua-el-caney-descargas/releases/download/v1.0.0/AguaElCaney-Repartidor-2026-11-15.apk">Descargar APK del repartidor</a>
+      <p class="small">Escanéalo con la cámara o toca el botón.</p>
+    </section>
+  </div>
+
+  <section class="steps">
+    <h3>Cómo instalarla</h3>
+    <ol>
+      <li>Abre el enlace o escanea el QR desde el celular Android.</li>
+      <li>Cuando el navegador pregunte, permite <strong>instalar apps de esta fuente</strong>.</li>
+      <li>Abre el archivo <code>.apk</code> descargado y toca <strong>Instalar</strong>.</li>
+      <li>La primera vez que abras la app, espera unos segundos: el servidor gratuito se activa al recibir la primera visita.</li>
+    </ol>
+  </section>
+
+  <footer>Agua el Caney · 2026 · Proyecto académico</footer>
+</div>
+</body>
+</html>
